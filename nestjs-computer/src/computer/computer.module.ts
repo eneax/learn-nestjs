@@ -1,4 +1,8 @@
 import { Module } from '@nestjs/common';
 
-@Module({})
+import { ComputerController } from './computer.controller';
+
+@Module({
+  controllers: [ComputerController],
+})
 export class ComputerModule {}
