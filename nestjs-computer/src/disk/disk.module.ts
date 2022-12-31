@@ -1,4 +1,8 @@
 import { Module } from '@nestjs/common';
 
-@Module({})
+import { DiskService } from './disk.service';
+
+@Module({
+  providers: [DiskService],
+})
 export class DiskModule {}
